@@ -1,0 +1,9 @@
+.list{
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.player{
+    padding: 10px 10px 30px;
+    border: 1px solid black;
+}
