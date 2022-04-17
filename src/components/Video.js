@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Player(props) {
-    let url = "https://www.youtube.com/embed/" + props.url;
+export default function Video(props) {
+    let url = "https://www.youtube.com/embed/" + props.data.v;
     return (
         <div className='player'>
             <iframe
@@ -12,7 +12,7 @@ export default function Player(props) {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
-            <div className='dateField'>{props.date.toLocaleString()}</div>
+            <div className='watches'>Просмотры: {props.data.watch}</div>
         </div>
     );
 }

@@ -3,7 +3,23 @@
     flex-wrap: wrap;
 }
 
-.player{
+.player, .articleWrapper{
     padding: 10px 10px 30px;
     border: 1px solid black;
+}
+
+.articleWrapper{
+    width: 560px;
+    height: 340px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.article{
+
+    color: white;
+}
+
+.articleWrapper > .watches{
+    color: white;
 }
