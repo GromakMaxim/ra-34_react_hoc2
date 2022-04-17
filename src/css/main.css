@@ -1,25 +1,44 @@
-.list{
-    margin: auto;
+.list {
     flex-wrap: wrap;
 }
 
-.player, .articleWrapper{
-    padding: 10px 10px 30px;
-    border: 1px solid black;
+
+.list-item {
+    display: flex;
+    width: 600px;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
 }
 
-.articleWrapper{
-    width: 560px;
-    height: 340px;
-    background-color: black;
-    border: 1px solid white;
+.article {
+    width: 100%;
+}
+
+.watches{
+    color: white;
+}
+
+.player{
+    margin: auto;
 }
 
 .article{
-
-    color: white;
+    justify-content: space-between;
 }
 
-.articleWrapper > .watches{
-    color: white;
+.new-pic,.popular-pic{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    right: 0;
+}
+
+.new-pic{
+    background-image: url("../pics/new.png");
+}
+
+.popular-pic{
+    background-image: url("../pics/flame.png");
 }

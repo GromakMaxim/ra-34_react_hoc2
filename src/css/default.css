@@ -1,3 +1,7 @@
+.flex{
+    display: flex;
+}
+
 .flex-col{
     display: flex;
     flex-direction: column;
@@ -8,3 +12,14 @@
     flex-direction: row;
 }
 
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+}
+
+.b1{
+    border: 1px solid black;
+}

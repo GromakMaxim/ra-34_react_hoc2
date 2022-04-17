@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import Video from "./Video";
 import Article from "./Article";
+import Popular from "./contentType/Popular";
+import New from "./contentType/New";
 
 export default class Widget extends Component {
 
@@ -74,12 +76,29 @@ export default class Widget extends Component {
         super(props, context);
     }
 
+    renderArray(){
+        let resultArray = [];
+        for (let item of this.contentData) {
+            if (item.v !== null && item.v !== undefined){
+                const Wrapper = withHOC(Video);
+                resultArray.push(<Wrapper key={item.id} data={item}/>)
+            } else {
+                const Wrapper = withHOC(Article);
+                resultArray.push(<Wrapper key={item.id} data={item}/>);
+            }
+        }
+
+        return resultArray;
+
+    }
+
     render() {
-        let obj = this.contentData[1];
-        const Wrapped = withHOC(Video);
         return (
-            <Wrapped data={obj}/>
-        );
+            <div className='list flex-row'>
+                {this.renderArray()}
+            </div>
+        )
+
     }
 
 
@@ -88,8 +107,21 @@ export default class Widget extends Component {
 
 function withHOC(Component){
     function Wrapper(props){
-        console.log('literally not');
-        return <Component {...props}/>;
+        console.log(props.data);
+        if (props.data.watch >= 1000){
+            return (
+                <Popular>
+                    <Component {...props}/>
+                </Popular>
+            );
+        } else {
+            return (
+                <New>
+                    <Component {...props}/>
+                </New>
+            );
+        }
+
     }
     return Wrapper;
 }
