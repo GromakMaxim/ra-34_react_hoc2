@@ -1,25 +1,25 @@
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-col{
+.flex-col {
     display: flex;
     flex-direction: column;
 }
 
-.flex-row{
+.flex-row {
     display: flex;
     flex-direction: row;
 }
 
-.pos-rel{
+.pos-rel {
     position: relative;
 }
 
-.pos-abs{
+.pos-abs {
     position: absolute;
 }
 
-.b1{
+.b1 {
     border: 1px solid black;
 }

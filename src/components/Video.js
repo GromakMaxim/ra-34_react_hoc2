@@ -5,8 +5,6 @@ export default function Video(props) {
     return (
         <div className='player'>
             <iframe
-                width="560"
-                height="315"
                 src={url}
                 title="YouTube video player"
                 frameBorder="0"

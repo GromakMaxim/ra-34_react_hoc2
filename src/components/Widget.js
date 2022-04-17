@@ -76,10 +76,10 @@ export default class Widget extends Component {
         super(props, context);
     }
 
-    renderArray(){
+    renderArray() {
         let resultArray = [];
         for (let item of this.contentData) {
-            if (item.v !== null && item.v !== undefined){
+            if (item.v !== null && item.v !== undefined) {
                 const Wrapper = withHOC(Video);
                 resultArray.push(<Wrapper key={item.id} data={item}/>)
             } else {
@@ -105,10 +105,10 @@ export default class Widget extends Component {
 }
 
 
-function withHOC(Component){
-    function Wrapper(props){
+function withHOC(Component) {
+    function Wrapper(props) {
         console.log(props.data);
-        if (props.data.watch >= 1000){
+        if (props.data.watch >= 1000) {
             return (
                 <Popular>
                     <Component {...props}/>
@@ -123,5 +123,6 @@ function withHOC(Component){
         }
 
     }
+
     return Wrapper;
 }

@@ -5,9 +5,9 @@ import '../src/css/default.css';
 import '../src/css/main.css';
 
 function App() {
-  return (
-    <Widget/>
-  );
+    return (
+        <Widget/>
+    );
 }
 
 export default App;
