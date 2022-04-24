@@ -10,6 +10,7 @@
 .flex-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .pos-rel {
@@ -22,4 +23,25 @@
 
 .b1 {
     border: 1px solid black;
+}
+
+.new-pic {
+    background-image: url("../pics/new.png");
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+}
+
+.popular-pic {
+    background-image: url("../pics/flame.png");
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
 }

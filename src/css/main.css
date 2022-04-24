@@ -1,51 +1,26 @@
 .list {
-    width: auto;
+    width: 50%;
     flex-wrap: wrap;
     margin: auto;
 }
 
-
-.list-item {
+.list > div{
     display: flex;
-    width: 600px;
-    background-color: black;
-    margin: 10px;
-    padding: 10px;
+    flex-direction: column;
+    border: 1px solid black;
+    min-height: 200px;
+    padding: 20px;
+    justify-content: space-between
 }
 
-.article {
-    width: 100%;
+.new,
+.popular,
+.article{
+    width: auto;
 }
 
-.watches {
-    color: white;
-}
-
-.player {
-    margin: auto;
-}
-
-.article {
+.article{
+    display: flex;
     justify-content: space-between;
-}
 
-.new-pic, .popular-pic {
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    right: 0;
-}
-
-.new-pic {
-    background-image: url("../pics/new.png");
-}
-
-.popular-pic {
-    background-image: url("../pics/flame.png");
-}
-
-iframe {
-    width: 560px;
-    height: 315px;
 }
