@@ -5,7 +5,7 @@
     margin: auto;
 }
 
-.list > div{
+.list > div {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -16,11 +16,11 @@
 
 .new,
 .popular,
-.article{
+.article {
     width: auto;
 }
 
-.article{
+.article {
     display: flex;
     justify-content: space-between;
 
